@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){var o=$("#nav");$(document).scroll(function(){o.css({borderBottom:$(this).scrollTop()<50?"none":"1px solid rgba(0, 0, 0, 0.2)"})})});

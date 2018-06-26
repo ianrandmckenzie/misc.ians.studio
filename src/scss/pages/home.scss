@@ -1,39 +1,217 @@
-// BEGIN: Delete this later
-#Boilerplate {
-  width: 100%;
-  height: 100%;
-
-  background: color(pearl);
-
-  .wrapper {
-    margin-top: ws(large);
-    position: relative;
-    z-index: 1;
-
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -10%;
-      display: block;
-      width: 100%;
-      height: 50%;
-      background: color(blue);
-      z-index: -1;
-    }
-
-    .view-gh {
-      display: inline-block;
-      color: color(grey);
-      transition: color 0.1s;
-
-      &:hover {
-        color: color(white);
-      }
-    }
-
-    .title {
-      color: color(black);
-    }
-  }
+#main {
+  background-color: #eff4f0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-// END: Delete this later
+
+.body.weighted .box-shadow {
+  box-shadow: 1px 2px 8px -1px #999;
+}
+
+.body.weighted .container {
+  margin-left: 80px;
+}
+
+.body.weighted .green {
+  color: #4fb567;
+  font-weight: bold;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.contact-icons .portfolio-info {
+  margin-bottom: 25px;
+}
+
+.body.weighted h1, .body.weighted h2, .body.weighted h4, .body.weighted h5 {
+  font-family: 'Spectral', serif;
+  margin: 25px;
+  margin-left: 0;
+}
+
+.body.weighted h1 span {
+  font-size: 2.2rem;
+}
+
+.container {
+  margin-top: 5vh;
+}
+
+.body.weighted h1 {
+  margin-bottom: 35px;
+  margin-left: -80px;
+}
+
+.body.weighted h4 {
+  margin-top: 40px;
+  margin-left: -80px;
+  text-align: left;
+}
+
+.body.weighted figcaption {
+  text-transform: lowercase;
+}
+
+.body.weighted h2 {
+  font-size: 1.5rem;
+}
+
+.body.weighted h2 span, .body.weighted a {
+  color: #57c670;
+}
+
+.body.weighted a {
+  font-weight: bold;
+}
+
+.body.weighted a:hover {
+  color: #57c670;
+  text-decoration: none;
+}
+
+.body.weighted .work-image, .info {
+  padding: 25px;
+  padding-top: 0;
+}
+
+.body.weighted .work-image img {
+  max-height: 190px;
+}
+
+.work-image, .ian-photo {
+  -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(75%);
+  transition: 0.8s;
+}
+
+.contact-icons .social, .work-image figcaption {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.work-image:hover, .ian-photo:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: 0.8s;
+}
+
+.body.weighted figcaption {
+  font-size: 0.7rem;
+  padding-top: 8px;
+}
+
+.body.weighted .ian-photo {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.body.weighted .contact-icons {
+  text-align: center;
+}
+
+.body.weighted .contact-icons p {
+  margin-bottom: 10px;
+}
+
+.body.weighted .contact-icons a {
+  margin-right: 25px;
+  font-size: 2rem;
+  color: #57c670;
+  text-decoration: none;
+}
+
+.contact-icons .social:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+#github {
+  color: #000000;
+}
+
+#dribbble {
+  color: #000000;
+}
+
+.body.weighted .contact-icons .social-portfolio {
+  font-size: 1rem;
+  margin-right: 0px;
+}
+
+.body.weighted footer .copy {
+  margin-top: 10px;
+  font-size: 0.7rem;
+}
+
+.body.weighted .atf-cta {
+  font-family: 'Spectral', serif;
+  background-color: #eff4f0;
+  color: black;
+  margin-bottom: 15px;
+  border: 1px solid #4fb567;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #eff4f0;
+}
+
+.dropdown.nav-item.show .dropdown-menu.show .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-image-link {
+  cursor: pointer;
+}
+
+.body.weighted h5.modal-title {
+  margin-left: 25px;
+}
+
+.body.weighted h3 {
+  font-family: 'Spectral', serif;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.body.weighted h6 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 550px){
+  .body.weighted h1 {
+    font-size: 2.0rem;
+  }
+
+  .body.weighted h2 {
+    font-size: 1.2rem;
+  }
+
+  .ian-photo {
+    margin-top: 30px;
+  }
+
+  .contact-icons {
+      text-align: left;
+  }
+
+  .body.weighted h1, footer {
+    margin-left: -40px;
+  }
+
+  .body.weighted h4 {
+    margin-left: -20px;
+  }
+
+  .container {
+    margin-left: 40px;
+  }
+
+}
